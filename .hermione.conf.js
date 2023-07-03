@@ -1,20 +1,21 @@
 module.exports = {
   sets: {
     desktop: {
-      files: "test/hermione",
+      files: 'test/hermione',
     },
   },
 
   browsers: {
     chrome: {
-      automationProtocol: "devtools",
+      automationProtocol: 'devtools',
       desiredCapabilities: {
-        browserName: "chrome",
+        browserName: 'chrome',
+        retry: 3,
       },
     },
   },
   plugins: {
-    "html-reporter/hermione": {
+    'html-reporter/hermione': {
       enabled: true,
     },
   },
